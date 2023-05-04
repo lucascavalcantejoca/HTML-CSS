@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores personalizados
+        #  = id
+        .  = classe
+        :  = pseudo-classe
+        :: = pseudo-elemento
+        >  = criança
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }a:visited{
+            color: rgb(146, 0, 0);
+        }a:hover{
+            text-decoration: underline;
+            color: goldenrod;
+        }a:active{
+            color: rgb(30, 182, 202);
+        }a::before{
+            content: '➞ '
+        }a::after{
+            content: ' (Isso é um link)';
+            color: rgb(1, 160, 160);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCqLWz_GIQdVQYVImmGajZPw"target="_blank" rel="external">Canal YT</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/"target="_blank" rel="external">Site Brabo</a></li>
+    </ul>
+</body>
+</html>

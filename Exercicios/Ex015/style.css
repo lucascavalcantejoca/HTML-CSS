@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}h1{
+    color: rgb(183, 201, 25);
+    background-color: maroon;
+    text-decoration: underline;
+}h2{
+    color: darkgoldenrod;
+}p{
+    color: blue;
+    text-align: justify;
+}
