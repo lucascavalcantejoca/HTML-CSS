@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,60 +27,83 @@
             background-color: lightgray;
             padding: 5px;
         }
+
+        col.grupos {
+            background-color: antiquewhite;
+        }
+
+        col.nomes {
+            background-color: aqua;
+        }
+
+        col.filmes {
+            background-color: blueviolet;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de tabelas</h1>
-    <table>
-        <caption>Filmes Favoritos</caption>
-        <thead>
-            <tr>
-                <th scope="col">Grupo</th>
-                <th scope="col">Nomes</th>
-                <th scope="colgroup" colspan="3">Filmes</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="rowgroup" rowspan="3">Mulheres</th>
-                <td>Ana Maria Santos</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
-            </tr>
-            <tr>
-                <td>Beatriz Souza</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>
-            </tr>
-            <tr>
-                <td>Cláudia Melo</td>
-                <td>Oblivion</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
-            </tr>
-            <tr>
-                <th scope="rowgroup" rowspan="3">Homens</th>
-                <td>Bruno Mendonça</td>
-                <td>Intocáveis</td>
-                <td>Amnésia</td>
-                <td>Gladiador</td>
-            </tr>
-            <tr>
-                <td>Daniel Lourenço</td>
-                <td>Wall-E</td>
-                <td>Oldboy</td>
-                <td>Dangal</td>
-            </tr>
-            <tr>
-                <td>Fabiano Mota</td>
-                <td>Star Wars Cap 5</td>
-                <td>Taxi Driver</td>
-                <td>ToyStory</td>
-            </tr>
-        </tbody>
-        </tbody>
-    </table>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="grupos">
+                <col class="nomes">
+                <col class="filmes" span="3">
+            </colgroup>
+            <caption>Filmes Favoritos</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="colgroup" colspan="3">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Mulheres</th>
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Homens</th>
+                    <td>Bruno Mendonça</td>
+                    <td>Intocáveis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars Cap 5</td>
+                    <td>Taxi Driver</td>
+                    <td>ToyStory</td>
+                </tr>
+            </tbody>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
